@@ -21,7 +21,7 @@ projectContainers.forEach((container, index) => {
         if (description) {
             setTimeout(() => {
                 description.classList.add("slide-in");
-            }, 800)
+            }, 400)
         }
     })
 });
