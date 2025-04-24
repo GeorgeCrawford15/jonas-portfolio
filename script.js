@@ -8,14 +8,30 @@ document.addEventListener("DOMContentLoaded", function() {
     title.classList.add("fade-in");
 });
 
+
 projectsTitle.addEventListener("mouseenter", function() {
     projectSection.classList.add("fade-in-fast");
+}); 
+
+projectsTitle.addEventListener("touchstart", function() {
+    projectSection.classList.add("fade-in-fast");
 });
+
 
 projectContainers.forEach((container, index) => {
     const description = projectDescriptions[index];
 
     container.addEventListener("mouseenter", function() {
+        container.classList.add("fade-in-fast");
+
+        if (description) {
+            setTimeout(() => {
+                description.classList.add("slide-in");
+            }, 400)
+        }
+    })
+
+    container.addEventListener("touchstart", function() {
         container.classList.add("fade-in-fast");
 
         if (description) {
