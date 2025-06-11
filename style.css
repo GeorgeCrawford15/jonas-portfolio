@@ -263,7 +263,10 @@ h2 {
     }
     .nav-links li {
         padding: 0;
-        margin: 20px;
+        margin: 0;
+    }
+    .nav-links li a {
+        font-size: 98%;
     }
     .grouped-sections {
         flex-direction: column;
