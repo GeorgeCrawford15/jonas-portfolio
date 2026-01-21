@@ -146,6 +146,13 @@ h2 {
     z-index: 10;
 }
 
+.project-container p {
+    text-align: left;
+    display: block;
+    padding-left: 25px;
+    margin: 7px 0;
+}
+
 .project-title {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -203,9 +210,10 @@ h2 {
 }
 
 #about p {
-    width: 30%;
+    width: 40%;
     min-width: 300px;
     margin: 0 auto;
+    line-height: 150%;
 }
 
 #about, #contact {
